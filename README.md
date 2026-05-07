@@ -70,9 +70,9 @@ sudo apt install jenkins -y
 #  Step 4: Configure Services
 
 
-sudo usermod -aG docker jenkins
-sudo systemctl restart jenkins
-sudo systemctl restart docker
+* sudo usermod -aG docker jenkins
+* sudo systemctl restart jenkins
+* sudo systemctl restart docker
 
 
 
