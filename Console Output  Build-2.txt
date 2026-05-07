@@ -1,0 +1,58 @@
+Started by GitHub push by AmitMishra9650
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/CI-CD-Website
+The recommended git tool is: NONE
+using credential 8c43db9f-ddec-4317-ab10-526418738af1
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/CI-CD-Website/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/AmitMishra9650/ci-cd-docker-jenkins-deployment.git # timeout=10
+Fetching upstream changes from https://github.com/AmitMishra9650/ci-cd-docker-jenkins-deployment.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- https://github.com/AmitMishra9650/ci-cd-docker-jenkins-deployment.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 0a777a70b8caaa404e82587ffc5530e9e1f10403 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0a777a70b8caaa404e82587ffc5530e9e1f10403 # timeout=10
+Commit message: "Update index.html"
+ > git rev-list --no-walk e024ef9b8ba3451227f73c55c224f368a76b4c2b # timeout=10
+[CI-CD-Website] $ /bin/sh -xe /tmp/jenkins8505875357766457127.sh
++ echo Building Docker Image...
+Building Docker Image...
++ docker build -t amit-website-image .
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon    896kB
+Step 1/5 : FROM nginx:alpine
+ ---> 5616878291a2
+Step 2/5 : RUN rm -rf /usr/share/nginx/html/*
+ ---> Using cache
+ ---> 684f58833322
+Step 3/5 : COPY . /usr/share/nginx/html
+ ---> b9d07e79d14b
+Step 4/5 : EXPOSE 80
+ ---> Running in 0cc9d9a391c2
+ ---> Removed intermediate container 0cc9d9a391c2
+ ---> ffe8bfcc7fd5
+Step 5/5 : CMD ["nginx", "-g", "daemon off;"]
+ ---> Running in 6b8bc81a6d5e
+ ---> Removed intermediate container 6b8bc81a6d5e
+ ---> 2382afdfd13e
+Successfully built 2382afdfd13e
+Successfully tagged amit-website-image:latest
++ echo Stopping old container...
+Stopping old container...
++ docker stop amit-website-container
+amit-website-container
++ docker rm amit-website-container
+amit-website-container
++ echo Running new container...
+Running new container...
++ docker run -d -p 80:80 --name amit-website-container amit-website-image
+4e0bc4a1602072c686cf4d4d87240a6992e9c3396e1d729edf8e7897393dfd79
++ echo Deployment done!
+Deployment done!
+Finished: SUCCESS
