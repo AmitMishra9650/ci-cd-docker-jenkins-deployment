@@ -173,7 +173,7 @@ GitHub Repository → Settings → Webhooks → Add Webhook
 Payload URL:
 
 
-http://EC2-PUBLIC-IP:8080/github-webhook/
+http://EC2-PUBLIC-IP:8080/github-webhook/     # jenkins URl 
 
 
 Content Type:
