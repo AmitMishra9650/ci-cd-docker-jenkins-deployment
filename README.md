@@ -5,7 +5,7 @@ Whenever code is pushed to GitHub, Jenkins automatically builds a Docker image, 
 
 ---
 
-# 📌 Tech Stack
+#  Tech Stack
 
 - AWS EC2 (Ubuntu Server)
 - Jenkins (CI/CD Automation)
@@ -16,7 +16,7 @@ Whenever code is pushed to GitHub, Jenkins automatically builds a Docker image, 
 
 ---
 
-# 🏗️ Architecture Flow
+#  Architecture Flow
 
 GitHub Repository → Jenkins Webhook Trigger → Docker Build → Container Deployment → AWS EC2 → Live Website
 
@@ -101,9 +101,9 @@ Example:
 - Username: admin
 - Password: admin@321
 
----
 
-# 🔗 Step 7: Create Jenkins Job
+
+#  Step 7: Create Jenkins Job
 
 - Create New Item
 - Freestyle Project → CI-CD-Website
@@ -194,49 +194,96 @@ Open browser:
 http://<EC2-PUBLIC-IP>
 
 
----
 
-# 📸 Project Screenshots
 
-## 🔹 Jenkins Dashboard
+#  Project Screenshots
+=========================
+
+##  Jenkins Dashboard
 
 ![Jenkins Dashboard](Screenshots/jenkins-dashboard.png)
 
----
 
-## 🔹 Docker Container Running
+
+##  Docker Container Running
 
 ![Docker Container](screenshots/docker-container.png)
 
----
 
-## 🔹 Live Website Output
+
+##  Live Website Output
 
 ![Website Output](screenshots/website-output.png)
 
----
+##  Changes in Index.html 
+
+![Changes in Index.html ](Screenshots/Changes in Index.html file.png)
+
+
+##  EC2-SG
+
+![EC2-SG](Screenshots/EC2-SG.png)
+
+##  Ec2
+
+![EC2](Screenshots/Execute Shell.png)
+
+
+##  Execute Shell
+
+![Execute Shell](Screenshots/Execute Shell.png)
+
+
+##  Webhooks
+
+![Webhooks](Screenshots/Webhooks.png)
+
+##  Website Output after Trigger Webhook
+
+
+![Website Output after Trigger Webhook](Screenshots/Website Output after Trigger Webhook.png)
+
+
+##  Live Website Output
+
+![Website Output](screenshots/website-output.png)
+
 
 #  Project Structure
 
 
 ci-cd-docker-jenkins-deployment/
-├── index.html
-├── index.html
+├── Console Output Build-1.txt
+├── Console Output Build-2.txt
 ├── Dockerfile
 ├── README.md
-│
+├── index.html
+├── templatemo-personal-javascripts.js
+├── templatemo-personal-style
+
 ├── screenshots/
 │   ├── jenkins-dashboard.png
 │   ├── docker-container.png
 │   └── website-output.png
-│
-└── scripts/
-    └── deploy.sh
-```
-
----
-
-# ⭐ Key Features
+    └── Changes in Index.html file.png
+    └── EC2-SG.png
+    └── EC2.png
+    └── Execute Shell.png
+    └── Webhooks.png
+    └── Website Output after Trigger Webhook.png
+   
+└── images /
+    └── computer-desk-stickers
+    └── curved-display-pinky-girl
+    └── dashboard-interfaces-transparent-displays
+    └── marketing-strategy-women
+    └── portfolio-website-girl
+    └── smiling-girl-computer-desktop
+    └── working-business-women
+     
+    
+     
+#  Key Features
 
 - Automated CI/CD pipeline
 - Docker container deployment
@@ -246,6 +293,6 @@ ci-cd-docker-jenkins-deployment/
 
 ---
 
-# 👨‍💻 Author
+#  Author
 
 ## Amit Mishra
