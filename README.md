@@ -1,4 +1,4 @@
-#  CI/CD Pipeline with Docker & Jenkins on AWS EC2
+#  CI/CD Pipeline Using Jenkins Deploy in Docker container on AWS EC2
 
 This project demonstrates a complete CI/CD pipeline using Jenkins, Docker, GitHub, and AWS EC2.  
 Whenever code is pushed to GitHub, Jenkins automatically builds a Docker image, deploys a container, and updates the live website automatically.
