@@ -164,12 +164,9 @@ echo "Deployment Completed Successfully!"
 Bash
 
 * docker ps ( EC2 Instance )
-* 
+ 
 
-## For Automation , Git push > BUild > Deploy in Docker container > Website running 
-
-
- Step 10: Configure GitHub Webhook
+# Step 10: Configure GitHub Webhook
 
 ## Install Jenkins Plugin
 - GitHub Integration Plugin
