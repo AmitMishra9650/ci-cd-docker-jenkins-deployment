@@ -231,7 +231,7 @@ http://<EC2-PUBLIC-IP>
 
 ##  Execute Shell
 
-![Execute Shell](Screenshots/ExecuteShell.png)
+![Execute Shell](Screenshots/Execute-Shell.png)
 
 
 ##  Webhooks
