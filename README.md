@@ -22,7 +22,7 @@ GitHub Repository → Jenkins Webhook Trigger → Docker Build → Container Dep
 
 ---
 
-# ⚙️ Step 1: Create AWS EC2 Instance
+#  Step 1: Create AWS EC2 Instance
 
 - Launch Ubuntu EC2 instance
 - Configure Security Group:
@@ -82,7 +82,7 @@ sudo systemctl restart docker
 Open browser:
 
 
-http://<EC2-PUBLIC-IP>:8080
+http://EC2-PUBLIC-IP:8080
 
 
 Get Jenkins admin password:
