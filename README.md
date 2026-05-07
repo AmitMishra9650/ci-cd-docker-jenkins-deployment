@@ -35,7 +35,8 @@ GitHub Repository → Jenkins Webhook Trigger → Docker Build → Container Dep
 #  Step 2: Install Docker
 
 
------
+Bash 
+
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt install docker.io -y
@@ -45,6 +46,7 @@ sudo apt install docker.io -y
 
 ## Install Java
 
+Bash 
 
 sudo apt update
 sudo apt install fontconfig openjdk-21-jre -y
@@ -53,6 +55,7 @@ java -version
 
 ## Install Jenkins
 
+Bash 
 
 sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
 https://pkg.jenkins.io/debian-stable/jenkins.io-2026.key
@@ -69,6 +72,7 @@ sudo apt install jenkins -y
 
 #  Step 4: Configure Services
 
+Bash 
 
 * sudo usermod -aG docker jenkins
 * sudo systemctl restart jenkins
@@ -86,6 +90,8 @@ http://EC2-PUBLIC-IP:8080
 
 
 Get Jenkins admin password:
+
+Bash 
 
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
@@ -134,16 +140,16 @@ Enable:
 
 echo "Building Docker Image..."
 
-docker build -t amit-website-image .
+* docker build -t amit-website-image .
 
 echo "Stopping old container..."
 
-docker stop amit-website-container || true
-docker rm amit-website-container || true
+* docker stop amit-website-container || true
+* docker rm amit-website-container || true
 
 echo "Running new container..."
 
-docker run -d -p 80:80 --name amit-website-container amit-website-image
+* docker run -d -p 80:80 --name amit-website-container amit-website-image
 
 echo "Deployment Completed Successfully!"
 
@@ -155,10 +161,12 @@ echo "Deployment Completed Successfully!"
 - Click **Build Now**
 - Verify running container:
 
+Bash
 
-docker ps ( EC2 Instance ) 
+* docker ps ( EC2 Instance )
+* 
 
-## for Automation , Git push > BUild > Deploy in Docker container > Website running 
+## For Automation , Git push > BUild > Deploy in Docker container > Website running 
 
 
  Step 10: Configure GitHub Webhook
@@ -186,12 +194,12 @@ Now whenever code changes are pushed to GitHub, Jenkins automatically triggers d
 
 ---
 
-# 🌐 Application Output
+#  Application Output
 
 Open browser:
 
 
-http://<EC2-PUBLIC-IP>
+http://EC2-PUBLIC-IP
 
 
 
