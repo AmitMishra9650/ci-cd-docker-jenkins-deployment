@@ -207,17 +207,17 @@ http://<EC2-PUBLIC-IP>
 
 ##  Docker Container Running
 
-![Docker Container](screenshots/docker-container.png)
+![Docker Container](Screenshots/docker-container.png)
 
 
 
 ##  Live Website Output
 
-![Website Output](screenshots/website-output.png)
+![Website Output](Screenshots/website-output.png)
 
 ##  Changes in Index.html 
 
-![Changes in Index.html ](Screenshots/Changes in Index.html file.png)
+![Changes in Index.html ](Screenshots/Changes-in-Index.html-file.png)
 
 
 ##  EC2-SG
@@ -226,12 +226,12 @@ http://<EC2-PUBLIC-IP>
 
 ##  Ec2
 
-![EC2](Screenshots/Execute Shell.png)
+![EC2](Screenshots/EC2.png)
 
 
 ##  Execute Shell
 
-![Execute Shell](Screenshots/Execute Shell.png)
+![Execute Shell](Screenshots/ExecuteShell.png)
 
 
 ##  Webhooks
@@ -241,12 +241,8 @@ http://<EC2-PUBLIC-IP>
 ##  Website Output after Trigger Webhook
 
 
-![Website Output after Trigger Webhook](Screenshots/Website Output after Trigger Webhook.png)
+![Website Output after Trigger Webhook](Screenshots/Website-Output-after-Trigger-Webhook.png)
 
-
-##  Live Website Output
-
-![Website Output](screenshots/website-output.png)
 
 
 #  Project Structure
@@ -265,12 +261,12 @@ ci-cd-docker-jenkins-deployment/
 │   ├── jenkins-dashboard.png
 │   ├── docker-container.png
 │   └── website-output.png
-    └── Changes in Index.html file.png
+    └── Changes-in-Index.html-file.png
     └── EC2-SG.png
     └── EC2.png
-    └── Execute Shell.png
+    └── Execute-Shell.png
     └── Webhooks.png
-    └── Website Output after Trigger Webhook.png
+    └── Website-Output-after-Trigger-Webhook.png
    
 └── images /
     └── computer-desk-stickers
