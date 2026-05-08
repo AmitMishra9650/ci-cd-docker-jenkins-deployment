@@ -37,9 +37,9 @@ GitHub Repository → Jenkins Webhook Trigger → Docker Build → Container Dep
 
 Bash 
 
-sudo apt update -y
-sudo apt upgrade -y
-sudo apt install docker.io -y
+* sudo apt update -y
+* sudo apt upgrade -y
+* sudo apt install docker.io -y
 
 
 #  Step 3: Install Jenkins
@@ -48,9 +48,9 @@ sudo apt install docker.io -y
 
 Bash 
 
-sudo apt update
-sudo apt install fontconfig openjdk-21-jre -y
-java -version
+* sudo apt update
+* sudo apt install fontconfig openjdk-21-jre -y
+* java -version
 
 
 ## Install Jenkins
